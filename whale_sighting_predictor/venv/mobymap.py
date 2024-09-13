@@ -33,7 +33,7 @@ m.drawmeridians(range(-80, -9, 10), labels=[0, 0, 0, 1], fontsize=10)
 
 # Plot the average locations
 x, y = m(monthly_avg_location['LON'].values, monthly_avg_location['LAT'].values)
-m.scatter(x, y, marker='o', color='red', s=100, zorder=5)
+m.scatter(x, y, marker='o', color='blue', s=50, zorder=5)
 
 # Add labels
 for i, row in monthly_avg_location.iterrows():
